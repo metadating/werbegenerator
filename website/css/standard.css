@@ -1,0 +1,138 @@
+/* BODY / HTML */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+	background: #fff;
+    font-size: 12px;
+	font-family: Helvetica, Arial, Sans-Serif;
+    text-align: center;
+  	color: #000000;
+  	clear: both;
+  	height: 100%;
+  	width: 100%;
+}
+
+#wg_container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	text-align: left;
+	padding: 50px 0 0 0;
+}
+
+/*--------HEADER---------*/
+#wg_header {
+	width: 1000px;
+}
+
+#wg_header_left{
+	float:left;
+	padding: 0 40px 0 0;
+}
+
+#wg_header_left_logo_colors{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.logo_colors_grey{
+	color: #909090;
+}
+
+.logo_colors_red{
+	color: #d04027;
+}
+
+.slogan_infos{
+	padding: 10px 0 0 0;
+}
+
+/*--------MENUE---------*/
+
+#wg_header_right{
+	text-align: right;
+	padding: 34px 0 0 0;
+	float:right;
+	
+}
+
+.wg_header_right_menue{
+	float:left;
+	padding: 0 40px 0 0;
+}
+
+.wg_header_right_menue ul{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0
+}
+
+.wg_header_right_menue ul li{
+    display: inline;
+    }
+ 
+.wg_header_right_menue ul li a{
+    float: left; 
+    text-decoration: none; 
+    padding:0 20px 0 0;
+    }
+    
+.wg_header_right_menue ul li a:hover{
+    float: left; 
+    text-decoration: underline; 
+    padding:0 20px 0 0;
+    }
+    
+#wg_header_right_social_apps{
+ 	float: right;
+ 	text-align: right;
+}
+    
+
+/*-----------CONTENT------------*/  
+
+#wg_flash {
+	padding: 25px 0 0 0; 
+	}	
+ 
+   
+.wg_intro_top {
+	float: left;
+	height: 243px;
+} 
+
+.wg_intro_bottom {
+	float: left;
+}
+
+#enter_button {
+	position: absolute;
+	margin-top: 212px;
+	margin-left: 421px;
+}
+  
+/*link, styles, etc*/
+
+a {
+	color: #D04027;
+}
+
+a:hover{
+	text-decoration: underline;	
+}
+
+
+.clear {
+	clear:both;
+}

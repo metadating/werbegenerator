@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Werbespotgenerator</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="de" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="robots" content="index,follow" />
+
+		<meta name="Author" content="Werbespotgenerator" />
+		<meta name="Copyright" content="Werbespotgenerator" />
+		<meta name="Publisher" content="Werbespotgenerator" />
+
+		<meta name="Audience" content="Alle" />
+		<meta name="country" content="Germany" />
+		<meta name="page-topic" content="" />
+
+		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/standard.css" />
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">		</script>
+		<script type="text/javascript">
+			var randPath = new Array('werbe','spot','gene','rator'); //variable for the path
+			var s = []; //temp variable for array sort
+			
+			/////////////////////////////CHOOSE RANDOM FOLDER --> reorder the array randomly
+			while (randPath.length) s.push(randPath.splice(Math.random() * randPath.length, 1));
+			while (s.length) randPath.push(s.pop());
+				
+			/////////////////////////////CHOOSE RANDOM PICTURE IN FOLDER
+				function randPicture() {
+					var path;
+					var quantity = 2; //quantity of images in folder
+					
+					path = Math.floor((Math.random()*quantity)+1) + '.jpg';
+					return path;
+				};
+				
+		</script>
+
+	</head>
+	<body>
+		<div id="wg_container">
+			<div id="wg_header">
+				<div id="wg_header_left">
+					<div id="wg_header_left_logo"><div id="wg_header_left_logo_colors">WERBE | <span class="logo_colors_grey">SPOT</span> | <span class="logo_colors_red">GENE</span> | RATOR</div><div class="slogan_infos">Ein Projekt der Universität der Künste | Berlin, Wintersemster 2011/12 &amp; 2012/13</div></div>
+				</div>
+				<div id="wg_header_right">
+					<div class="wg_header_right_menue"><ul><li><a href="#">Informationen</a></li><li><a href="#">UdK</a></li><li><a href="#">Impressum</a></li></ul></div> <div id="wg_header_right_social_apps">Facebook | Twitter</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="wg_flash">
+				<div id="enter_button"> <a href="#"> <img src="images/enter_button.jpg"> </a> </div>
+				
+				<div class="wg_intro_top"> <img src="images/intro/test.gif" onload="this.onload=null; this.src='images/intro/' + randPath[0] + '/' + randPicture();" /> </div>
+				<div class="wg_intro_top"> <img src="images/intro/test.gif" onload="this.onload=null; this.src='images/intro/' + randPath[1] + '/' + randPicture();" /> </div>
+				<div class="wg_intro_bottom"> <img src="images/intro/test.gif" onload="this.onload=null; this.src='images/intro/' + randPath[2] + '/' + randPicture();" /> </div>
+				<div class="wg_intro_bottom"> <img src="images/intro/test.gif" onload="this.onload=null; this.src='images/intro/' + randPath[3] + '/' + randPicture();" /> </div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+</html>
+
