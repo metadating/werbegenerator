@@ -2,7 +2,6 @@
 
 //problem bei "preis"
 
-// test
 
 package  {
 	
